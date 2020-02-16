@@ -1,0 +1,93 @@
+@import "assets/fonts/fonts.css";
+
+* {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: 1020px;
+    padding: 0 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #2d303a;
+    height: 95px;
+    box-sizing: border-box;
+    border-bottom: 6px solid #323746;
+}
+
+.header .wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.star {
+    color: #f06c64;
+}
+
+.header_nav {
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    padding: 8px 0 0;
+}
+
+.header_nav-item {
+    position: relative;
+    height: 30px;
+    margin-left: 29px;
+    margin-top: 18px;
+}
+
+.header_nav-item a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    height: 100%;
+}
+
+.header_nav-item:not(:last-child)::after {
+    content: ".";
+    display: block;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: -18px;
+    top: -2px;
+    color: #494e62;
+}
+
+.active a {
+    color: #f06c64;
+}
+
+.header_nav-item a:hover {
+    color: #f06c64;
+}
