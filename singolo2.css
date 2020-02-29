@@ -1,6 +1,207 @@
 @import "assets/fonts/fonts.css";
 
 * {
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.portfolio {
+    width: 100%;
+    min-height: 864px;
+    border-bottom: 6px solid #323746;
+    background-color: #2d303a;
+}
+
+.portfolio_content {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.portfolio_title {
+    padding-top: 69px;
+}
+
+.title {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
     font-family: "Lato", sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+}
+
+.portfolio_text {
+    padding: 27px 0 11px 0;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.portfolio_tags {
+    padding-left: 1px;
+    display: inline-block;
+}
+
+.tag_item {
+    float: left;
+    padding: 0 6px 0 6px;
+    margin-right: 10px;
+    height: 22px;
+    border-radius: 5px;
+    border: 1px solid #666d89;
+    background-color: #2d303a;
+    font-size: 12px;
+    line-height: 20px;
+    color: #767e9e;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.tag_item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px 1px #767e9e;
+    transition: all 150ms ease-in-out;
+}
+
+.tag_item:active {
+    opacity: 0.5;
+}
+
+.tag_item:focus {
+    color: #dedede;
+    outline: none;
+    border: 1px solid #c5c5c5;
+}
+
+.portfolio_table {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -1px;
+}
+
+.table_item {
+    padding-top: 17px;
+    padding-bottom: 3px;
+
+    width: 220px;
+    height: 187px;
+}
+
+.table_item > img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 250ms ease-in-out;
+}
+
+.table_item > img:active {
+    opacity: 0.5;
+    transition: all 150ms ease-in-out;
+}
+
+.about_us {
+    width: 100%;
+    min-height: 728px;
+    border-bottom: 6px solid white;
+    background-color: #f2f2f2;
+}
+
+.about_us_content {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.about_us_title {
+    padding-top: 68px;
+}
+
+.about_us_text {
+    padding: 27px 0 45px 0;
+}
+
+.about_us_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about_us_item {
+    width: 300px;
+}
+
+.about_us_photo:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 150ms ease-in-out;
+}
+
+.about_us_photo:active {
+    opacity: 0.6;
+}
+
+.about_us_name {
+    padding: 14px 0 10px 0;
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+}
+
+.about_us_description {
+    font-size: 12px;
+    line-height: 21px;
+    color: #767e9e;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.about_us_social_networks {
+    padding-top: 24px;
+}
+
+.about_us_social_networks > div {
+    float: left;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #666d89;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 150ms ease-in-out;
+}
+
+.about_us_social_networks > div:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.about_us_social_networks > div:active {
+    opacity: 0.4;
+}
+
+.facebook {
+    background-image: url(assets/img/facebook.png);
+}
+
+.google {
+    background-image: url(assets/img/google.png);
+}
+
+.twitter {
+    background-image: url(assets/img/twitter.png);
+}
+
+.linkedin {
+    background-image: url(assets/img/linkedin.png);
 }
